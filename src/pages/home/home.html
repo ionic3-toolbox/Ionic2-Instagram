@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Instagram Integration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let entry of apiResponse">
+    <img src="{{entry.images.low_resolution.url}}"/>
+  </ion-card>
+</ion-content>
